@@ -36,15 +36,13 @@ def pitch_selection(lpi, inc, samples, w, h, dpi):
 
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    lpi = 50
-    inc = .05
-    samples = 100
-    w = 4
-    h = 35
-    dpi = 600
-    image = pitch_selection(lpi, inc, samples, w, h, dpi)
-    image.show()
+lpi = 50
+inc = .05
+samples = 100
+w = 4
+h = 35
+dpi = 600
+image = pitch_selection(lpi, inc, samples, w, h, dpi)
+image.show()
 
 
