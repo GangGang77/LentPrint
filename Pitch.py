@@ -38,9 +38,9 @@ def pitch_selection(lpi, inc, samples, w, h, dpi):
 
 lpi = 50
 inc = .05
-samples = 10
+samples = 100
 w = 4
-h = 5
+h = 31
 dpi = 600
 image = pitch_selection(lpi, inc, samples, w, h, dpi)
 image.save('pitch test.png', dpi=(dpi, dpi))
