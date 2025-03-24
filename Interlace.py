@@ -18,14 +18,14 @@ def interlace(intnum, lpi, dpi, im1, im2, im3=None, im4=None):
                 mask_array[:, j] = 0
         mask = Image.fromarray(mask_array, mode='L')
         image = Image.composite(image, images[i], mask)
-        mask.show()
+        #mask.show()
 
     return image
 
-im1 = Image.open('4k test 1.png')
-im2 = Image.open('4k test 2.png')
-im3 = Image.open('4k test 3.png')
-im4 = Image.open('4k test 4.png')
+im1 = Image.open('red.png')
+im2 = Image.open('green.png')
+im3 = Image.open('blue.png')
+im4 = Image.open('white.png')
 
 dpi = 200
-interlace(3, 50, dpi, im1, im2, im3=im3).save('4k test interlace.png', dpi=(dpi, dpi))
+interlace(4, 50.17, dpi, im1, im2, im3=im3, im4=im4).save('solidTest4.png', dpi=(dpi, dpi))
